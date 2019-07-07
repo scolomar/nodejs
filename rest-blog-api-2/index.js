@@ -34,4 +34,4 @@ app.post('/posts/:postId/comments', routes.comments.addComment)
 app.put('/posts/:postId/comments/:commentId', routes.comments.updateComment)
 app.delete('/posts/:postId/comments/:commentId', routes.comments.removeComment)
 
-app.listen(3000)
+app.listen(8080)
