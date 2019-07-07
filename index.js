@@ -16,4 +16,4 @@ app.put('/accounts/:a',(x,y)=>{store.accounts[x.params.a]=x.body;
 app.delete('/accounts/:a',(x,y)=>{store.accounts.splice(x.params.a,1);
 	y.status(204).send();
 })
-app.listen(3000)
+app.listen(8080)
