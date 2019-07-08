@@ -7,16 +7,20 @@ let s={
       x1:"X1",
       x2:"X2",
       comments:[
+        {
           x:"x1",
           x:"x2"
+        }
       ]
     },
     {
       y1:"Y1",
       y2:"Y2",
       comments:[
+        {
           y:"y1",
           y:"y2"
+        }
       ]
     }
   ]
