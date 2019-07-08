@@ -10,4 +10,4 @@ ENTRYPOINT ["node"]
 CMD ["index.js"]
 
 # docker build --tag rest-blog-api:alpine https://raw.githubusercontent.com/secobau/nodejs/master/rest-blog-api/Dockerfile
-# docker container run --name rest-blog-api --detach --publish 3000:8080 rest-blog-api:alpine
+# docker container run --name rest-blog-api --detach --publish 8080:8080 rest-blog-api:alpine
