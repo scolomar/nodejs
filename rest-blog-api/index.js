@@ -29,6 +29,8 @@ let s={
 let x=express()
 x.use(bodyParser.json())
 x.use((request,response,next)=>{request.s=s;next()})
+x.set("view engine", "pug");
+x.set("views", "./views");
 x.get('/posts',r.posts.getPosts)
 x.post('/posts',r.posts.addPost)
 x.put('/posts/:p',r.posts.updatePost)
@@ -37,4 +39,6 @@ x.get('/posts/:p/comments',r.comments.getComments)
 x.post('/posts/:p/comments',r.comments.addComment)
 x.put('/posts/:p/comments/:c',r.comments.updateComment)
 x.delete('/posts/:p/comments/:c',r.comments.removeComment)
+x.get('/',r.pug.getHomepage)
+x.get('/user/:u',r.pug.getHomepageUser)
 x.listen(8080)
