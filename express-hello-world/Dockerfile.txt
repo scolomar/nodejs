@@ -10,5 +10,5 @@ RUN npm install
 ENTRYPOINT ["node"]
 CMD ["index.js"]
 
-# docker build --tag express-hello-world:alpine https://raw.githubusercontent.com/secobau/nodejs/master/express-hello-world/Dockerfile
+# docker build --tag express-hello-world:alpine https://raw.githubusercontent.com/secobau/nodejs/master/express-hello-world/Dockerfile.txt
 # docker container run --name express-hello-world --detach --publish 8080:8080 express-hello-world:alpine
