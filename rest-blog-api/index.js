@@ -1,7 +1,30 @@
 const express = require('express') 
 const bodyParser = require('body-parser')
 const r = require('./routes')
-let s={ posts:[{x:"X",comments:[x:"x1",x:"x2"]},{y:"Y",comments:[y:"y1",y:"y2"]}}
+let s={
+  posts:[
+    {
+      x1:"X1",
+      x2:"X2",
+      comments:[
+        {
+          x:"x1",
+          x:"x2"
+        }
+      ]
+    },
+    {
+      y1:"Y1",
+      y2:"Y2",
+      comments:[
+        {
+          y:"y1",
+          y:"y2"
+        }
+      ]
+    }
+  ]
+}
 let x=express()
 x.use(bodyParser.json())
 x.use((request,response,next)=>{request.s=s;next()})
